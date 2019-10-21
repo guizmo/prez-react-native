@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>React Native</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/blood.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section class="section-00">
+			  <img width="400" height="324" data-src="./img/me.jpg" alt="Me">
+			  <h3>Guillaume Bartolini</h3>
+			  <p>Mobile / Web developer @ isi.nc</p>
+			</section>
+			<section class="section-01">
+			  <img data-src="./img/rn.png" alt="Me">
+			</section>
+			<section class="section-02">
+			  <section data-transition="fade">
+
+			    <h3>REACT NATIVE ?</h3>
+
+			    <ul>
+			      <li>Créé et supporté par facebook</li>
+			      <li>Créer des applications mobile avec React/Javascript</li>
+			      <li>Android / iOS / Windows & Xbox / SmartTV / Desktop</li>
+			    </ul>
+			  </section>
+			  <section data-transition="fade">
+			    <h3>Le concept</h3>
+			    <ol>
+			      <li>Javascript logic</li>
+			      <li>API Bridge</li>
+			      <li>Render Native Component</li>
+			    </ol>
+			  </section>
+			  <section data-transition="fade">
+			    <h3>Qui utilise RN ?</h3>
+			    <img data-src="./img/using-it.png" alt="Me">
+
+			  </section>
+
+
+			</section>
+			<section class="section-03">
+			  <h3>La concurrence</h3>
+			  <ol>
+			    <li>Fluter (dart syntax)</li>
+			    <li>NativeScript</li>
+			    <li>Vue Native (Compiles to React Native)</li>
+			    <li>Ionic</li>
+			    <li>PhoneGap</li>
+			    <li>Xamarin</li>
+			    <li>Onsen UI</li>
+			    <li>...</li>
+
+			  </ol>
+			</section>
+			<section class="section-04">
+			  <section data-transition="fade">
+			    <h2>Pros</h2>
+
+			    <ul>
+			      <li>Gratuit</li>
+			      <li>Developement rapide</li>
+			      <li>Performant</li>
+			      <li>Cross Platforms</li>
+			      <li>Forte communauté</li>
+			      <li>Fiable et stable (V 0.61.0)</li>
+			      <li>Beaucoup de composants</li>
+			      <li>Réutilisable pour le web (react-native-web)</li>
+			    </ul>
+			  </section>
+			  <section data-transition="fade">
+			    <h2>Cons</h2>
+
+			    <ul>
+			      <li>Fluidité de la navigation (VS natif)</li>
+
+			      <li>Qualité de certain composants</li>
+			      <li>Temps d'apprentissage (JSX vs JS)</li>
+			      <li>Outils de DEV natif ( Xcode, Android Studio, SDKs)</li>
+			      <li>Le bridge Javascript <--> Natif</li>
+			      <li>Testing and debugging</li>
+			    </ul>
+			  </section>
+
+			</section>
+			<section class="section-05">
+			  <h2>Geting Started</h2>
+
+			  <ol>
+			    <li>
+			      <h4>Expo CLI</h4>
+			    </li>
+			    <li>
+			      <h4>React Native CLI</h4>
+			    </li>
+			  </ol>
+			</section>
+			<section class="section-06" data-background-video="./video/prez.mov" data-background-color="#000000">
+
+			</section>
+			<section class="section-07">
+			  <pre>
+			    <code class="hljs" data-trim>
+			    import React, { Component } from 'react';
+			    import { Text, View } from 'react-native';
+
+			    export class App extends Component {
+
+			      render() {
+			        return (
+			          &lt;View&gt;
+			            &lt;Text&gt;Hello World&lt;/Text&gt;
+			          &lt;/View&gt;
+			        )
+			      }
+			    }
+			    </code>
+			  </pre>
+
+			</section>
+			<section class="section-08">
+			  <h3>Déploiement</h3>
+
+			  <img width="450" height="480" src="./img/horror.jpg" alt="WHY ?!">
+			</section>
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+			navigationMode: 'linear',
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
+
+</html>
