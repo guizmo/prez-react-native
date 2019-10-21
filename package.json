@@ -1,7 +1,7 @@
 {
-  "name": "reveal.js",
+  "name": "prez-react-native",
   "version": "3.8.0",
-  "description": "The HTML Presentation Framework",
+  "description": "Prex React Native",
   "homepage": "http://revealjs.com",
   "subdomain": "revealjs",
   "main": "js/reveal.js",
